@@ -11,36 +11,36 @@ namespace BusinessLayer.Concrete
 {
     public class ExperienceManager:IExperienceService
     {
-        IExperienceDal experienceDal;
+        IExperienceDal _experienceDal;
 
         public ExperienceManager(IExperienceDal experienceDal)
         {
-            this.experienceDal = experienceDal;
+            _experienceDal = experienceDal;
         }
 
         public void TAdd(Experience t)
         {
-            throw new NotImplementedException();
+            _experienceDal.Insert(t);
         }
 
         public void TDelete(Experience t)
         {
-            throw new NotImplementedException();
-        }
-
-        public Experience TGetById(int id)
-        {
-            throw new NotImplementedException();
+            _experienceDal.Delete(t);
         }
 
         public List<Experience> TGetList()
         {
-            return experienceDal.GetList();
+            return _experienceDal.GetList();
         }
 
         public void TUpdate(Experience t)
         {
-            throw new NotImplementedException();
+            _experienceDal.Update(t);
+        }
+
+        public Experience TGetById(int id)
+        {
+            return _experienceDal.GetByID(id);
         }
     }
 }
