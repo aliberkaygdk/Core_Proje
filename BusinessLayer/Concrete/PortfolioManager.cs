@@ -25,12 +25,12 @@ namespace BusinessLayer.Concrete
 
         public void TDelete(Portfolio t)
         {
-            throw new NotImplementedException();
+            portfolioDal.Delete(t);
         }
 
         public Portfolio TGetById(int id)
         {
-            throw new NotImplementedException();
+            return portfolioDal.GetByID(id);
         }
 
         public List<Portfolio> TGetList()
@@ -40,7 +40,7 @@ namespace BusinessLayer.Concrete
 
         public void TUpdate(Portfolio t)
         {
-            throw new NotImplementedException();
+            portfolioDal.Update(t);
         }
     }
 }
