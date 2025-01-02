@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -20,17 +21,17 @@ namespace BusinessLayer.Concrete
 
         public void TAdd(Testimonial t)
         {
-            throw new NotImplementedException();
+            testimonialDal.Insert(t);
         }
 
         public void TDelete(Testimonial t)
         {
-            throw new NotImplementedException();
+            testimonialDal.Delete(t);
         }
 
         public Testimonial TGetById(int id)
         {
-            throw new NotImplementedException();
+            return testimonialDal.GetByID(id);
         }
 
         public List<Testimonial> TGetList()
@@ -40,7 +41,7 @@ namespace BusinessLayer.Concrete
 
         public void TUpdate(Testimonial t)
         {
-            throw new NotImplementedException();
+            testimonialDal.Update(t);
         }
     }
 }
