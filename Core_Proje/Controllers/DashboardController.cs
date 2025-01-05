@@ -5,7 +5,7 @@ namespace Core_Proje.Controllers
 {
     public class DashboardController : Controller
     {
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Index()
         {
             return View();
