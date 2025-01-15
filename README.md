@@ -47,7 +47,7 @@
 
 • Dashboard yapısı
 
-# Projede Kullanılanlar
+# Ekran Görüntüleri
 
 ![core db](https://github.com/user-attachments/assets/4b65c2ae-a07e-416e-8333-dd85365fef0a)
 ![1](https://github.com/user-attachments/assets/276d6320-ba9f-4d78-99e1-76720b733ff5)
